@@ -62,7 +62,7 @@ public class ContaCliente {
 
     public double subSaldo(double valor) {
         if (valor > saldo) {
-            System.out.println("Seu saldo é insuficiente para retirada. Seu saldo atual é: R$%.2f%n", saldo);
+            System.out.printf("Seu saldo é insuficiente para retirada. Seu saldo atual é: R$%.2f%n", saldo);
             return saldo;
         }
         saldo -= valor;
